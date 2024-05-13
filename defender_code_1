@@ -1,0 +1,3 @@
+sudo iptables -L -v
+sudo iptables -A -INPUT -s 192.168.56.103 -j DROP
+sudo iptables -L -v

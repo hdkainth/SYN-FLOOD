@@ -1,0 +1,5 @@
+sudo iptables -L -v
+sudo iptables -N syn_flood
+sudo iptables -A INPUT -p tcp --syn -j syn_flood
+sudo iptables -A syn_flood -j DROP
+sudo iptables -L -v
